@@ -1,0 +1,21 @@
+# Dependency directories
+node_modules/
+
+# Local configuration and secrets
+.env
+.env.local
+
+# Build outputs
+dist/
+build/
+
+# Debug logs
+*.log
+npm-debug.log*
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# IDE settings
+.vscode/
