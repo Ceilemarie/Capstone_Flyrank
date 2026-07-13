@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Employer Job Posting</title>
+  <link rel="stylesheet" href="/styles.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero-copy">
+      <span class="eyebrow">Employer workspace</span>
+      <h1>Post a job with exact details.</h1>
+      <p>This capstone form keeps job posts explicit and human-readable. Fill in the required fields so recruiters and applicants see the real requirements upfront.</p>
+    </section>
+
+    <section class="card form-card">
+      <form action="/employer/post-job" method="POST" class="job-form">
+        <div class="field-grid">
+          <label>
+            Company name
+            <input type="text" name="companyName" placeholder="FlyRank Labs" required />
+          </label>
+          <label>
+            Job title
+            <input type="text" name="jobTitle" placeholder="Frontend AI Engineer" required />
+          </label>
+        </div>
+
+        <div class="field-grid">
+          <label>
+            Location
+            <input type="text" name="location" placeholder="Remote, Lagos, Hybrid" required />
+          </label>
+          <label>
+            Employment type
+            <select name="employmentType" required>
+              <option value="">Select type</option>
+              <option>Full-time</option>
+              <option>Part-time</option>
+              <option>Contract</option>
+              <option>Internship</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="field-grid">
+          <label>
+            Exact headcount
+            <input type="number" name="headcount" min="1" step="1" placeholder="3" required />
+          </label>
+          <label>
+            Required skills
+            <input type="text" name="requiredSkills" placeholder="Node.js, Express, JavaScript" required />
+          </label>
+        </div>
+
+        <label>
+          Job description
+          <textarea name="jobDescription" rows="6" placeholder="Describe the role with concrete duties and measurable expectations." required></textarea>
+        </label>
+
+        <button type="submit">Post job</button>
+      </form>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,12 @@
+{
+  "name": "capstone-flyrank",
+  "version": "1.0.0",
+  "description": "Capstone job board backend and employer posting form",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  }
+}
